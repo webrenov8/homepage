@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+/* Navbar */
+.bg-light {
+    background-color: white !important;
+}
+/* End */ 
+
+
+/* We'll Transform Your Ideas section */
+#cards-row {
+    margin-top: 50px;
+}
+.card.steps .card-title {
+    font-size: xx-large;
+    margin-bottom: 26px;
+}
+.card.steps .card-subtitle {
+    margin-bottom: 30px !important;
+}
+.card.steps .card-text {
+    margin-bottom: 73px !important;
+}
+.card.steps .card-title, .card.steps .card-subtitle {
+    color: blue !important;
+}
+.card.steps .card-title, .card.steps .card-subtitle, .card.steps .card-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#transform-ideas {
+    margin-top: 100px;
+    color: blue;
+}
+/* End */
+
+
+/* Why Us card+photo section*/
+/* #why-us {
+    display: flex;
+    justify-content: center;
+} */
+
+.why-us-card-photo {
+    position: relative;
+} 
+#why-us .card.w-50 {
+    position: absolute;
+    min-width: 250px;
+    top: 0;
+    left: 100%;
+}
+.why-us-photo {
+    position: relative;
+    margin-bottom: 100px;
+}
+.card-title {
+    font-size: large;
+    color: blue;
+}
+.card-title, .card-text {
+    text-align: left;
+}
+.card-text-blue {
+    color: blue;
+    font-size: x-large;
+}
+/* End */
+
+
+#project-gallery {
+    margin-top: 50px;
+}
+
+#why-us {
+    margin-top: 125px;
+}
