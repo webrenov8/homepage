@@ -1,50 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-p, label {
-    font-family: 'Barlow', sans-serif;
+body{
+    margin-top:40px;
 }
 
-img {
-    width: 100%;
+/* Fonts */
+h1, h2, h3, h4, h5, h6{
+    font-family: Josefin Sans;
 }
+
+p{
+    font-family: Barlow;
+}
+/* End */
+
 /* Navbar */
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0px;
+    z-index:10;
+}
 .bg-light {
     background-color: white !important;
 }
 /* End */ 
-
-/* Hero */
-#hero {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 145%;
-
-/* or 116px */
-letter-spacing: 0.04em;
-}
-/* End */
-
-/* Work Section */
-#work {
-    margin-top: 100px;
-    color: blue;
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 35px;
-
-/* identical to box height */
-letter-spacing: 0.04em;
-}
-#project-gallery {
-    margin-top: 50px;
-}
-/* End */
 
 
 /* We'll Transform Your Ideas section */
@@ -52,16 +36,8 @@ letter-spacing: 0.04em;
     margin-top: 50px;
 }
 .card.steps .card-title {
+    font-size: xx-large;
     margin-bottom: 26px;
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 50px;
-
-/* identical to box height */
-text-align: center;
-letter-spacing: 0.035em;
 }
 .card.steps .card-subtitle {
     margin-bottom: 30px !important;
@@ -78,14 +54,7 @@ letter-spacing: 0.035em;
     text-align: center;
 }
 #transform-ideas {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 35px;
-    /* identical to box height */
-    letter-spacing: 0.04em;
-    margin-top: 100px; 
+    margin-top: 100px;
     color: blue;
 }
 /* End */
@@ -93,20 +62,31 @@ letter-spacing: 0.035em;
 
 /* Why Us card+photo section*/
 #why-us {
-    margin: 125px 0px 100px 0px;
+    margin-bottom: 100px;
 }
 .why-us-card-photo {
     max-width: 550px;
     position: relative;
 }
+
+#why-us .why-us-card-photo.odd .card.w-50 {
+    left: -66%;
+}
+
 #why-us .card.w-50 {
     position: absolute;
-    width: 200px;
+    width: 90% !important;
     top: 10%;
     left: 75%;
 }
 .why-us-card-photo {
+    margin: auto;
+    margin-left:24px;
     margin-bottom: 100px;
+}
+.why-us-card-photo.odd {
+    margin-left:auto;
+    margin-right: 24px;
 }
 .card-title {
     font-size: large;
@@ -124,13 +104,6 @@ letter-spacing: 0.035em;
 
 /* Testimonials */
 #testimonials {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 35px;
-    /* identical to box height */
-    letter-spacing: 0.04em;
     color: blue;
 }
 #testimonial-cards {
@@ -148,22 +121,45 @@ letter-spacing: 0.035em;
 }
 /* End */
 
-
 /* Get Started */
 #get-started {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 35px;
-    /* identical to box height */
-    letter-spacing: 0.04em;
     margin-top: 100px;
     color: blue;
 }
 #get-started-subheading {
-    margin: 50px 0px 50px 0px;
+    margin-top: 50px;
     text-align: center;
     font-size: x-large;
 }
-/* End */
+#project-gallery {
+    margin-top: 50px;
+}
+
+#why-us {
+    margin-top: 125px;
+}
+
+@media(max-width:1000px){
+    img.image-fluid {
+        max-width: 100%;
+    }
+    #why-us .card.w-50 {
+        position: inherit;
+        width: 200px;
+        top: 0%;
+        left: 0%;
+        width: 90% !important;
+        margin: auto !important;
+        margin-top: -7%;
+    }
+    .why-us-card-photo {
+        margin: auto auto 36px auto;
+    }
+    .why-us-card-photo.odd {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #why-us .why-us-card-photo.odd .card.w-50 {
+        left: unset;
+    }
+}
