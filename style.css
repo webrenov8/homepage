@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100%;
-}
-
 /* Navbar */
 .bg-light {
     background-color: white !important;
