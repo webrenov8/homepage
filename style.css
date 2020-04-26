@@ -70,6 +70,27 @@ body {
 /* End */
 
 
+/* Testimonials */
+#testimonials {
+    color: blue;
+}
+#testimonial-cards {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.testimonial-name {
+    font-weight: bold;
+    text-align: left;
+}
+.card-text.testimonial {
+    font-weight: bold;
+}
+/* End */
+
+/* Get Started */
+
 #project-gallery {
     margin-top: 50px;
 }
