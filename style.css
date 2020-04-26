@@ -43,6 +43,9 @@ body {
 
 
 /* Why Us card+photo section*/
+#why-us {
+    margin-bottom: 100px;
+}
 .why-us-card-photo {
     max-width: 550px;
     position: relative;
@@ -95,7 +98,9 @@ body {
     color: blue;
 }
 #get-started-subheading {
-    font-size: larger;
+    margin-top: 50px;
+    text-align: center;
+    font-size: x-large;
 }
 #project-gallery {
     margin-top: 50px;
