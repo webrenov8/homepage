@@ -2,16 +2,41 @@
     box-sizing: border-box;
 }
 
+p, label {
+    font-family: 'Barlow', sans-serif;
+}
+
 /* Navbar */
 .bg-light {
     background-color: white !important;
 }
 /* End */ 
 
+/* Hero */
+#hero {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 145%;
+
+/* or 116px */
+letter-spacing: 0.04em;
+}
+/* End */
 
 /* Work Section */
 #work {
+    margin-top: 100px;
     color: blue;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+
+/* identical to box height */
+letter-spacing: 0.04em;
 }
 #project-gallery {
     margin-top: 50px;
@@ -42,7 +67,13 @@
     text-align: center;
 }
 #transform-ideas {
-    margin-top: 100px;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
     color: blue;
 }
 /* End */
@@ -81,6 +112,13 @@
 
 /* Testimonials */
 #testimonials {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
     color: blue;
 }
 #testimonial-cards {
@@ -101,11 +139,18 @@
 
 /* Get Started */
 #get-started {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 35px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
     margin-top: 100px;
     color: blue;
 }
 #get-started-subheading {
-    margin-top: 50px;
+    margin: 50px 0px 50px 0px;
     text-align: center;
     font-size: x-large;
 }
