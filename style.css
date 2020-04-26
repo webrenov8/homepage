@@ -9,6 +9,16 @@
 /* End */ 
 
 
+/* Work Section */
+#work {
+    color: blue;
+}
+#project-gallery {
+    margin-top: 50px;
+}
+/* End */
+
+
 /* We'll Transform Your Ideas section */
 #cards-row {
     margin-top: 50px;
@@ -40,7 +50,7 @@
 
 /* Why Us card+photo section*/
 #why-us {
-    margin-bottom: 100px;
+    margin: 125px 0px 100px 0px;
 }
 .why-us-card-photo {
     max-width: 550px;
@@ -88,6 +98,7 @@
 }
 /* End */
 
+
 /* Get Started */
 #get-started {
     margin-top: 100px;
@@ -98,10 +109,4 @@
     text-align: center;
     font-size: x-large;
 }
-#project-gallery {
-    margin-top: 50px;
-}
-
-#why-us {
-    margin-top: 125px;
-}
+/* End */
