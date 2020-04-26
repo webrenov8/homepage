@@ -6,39 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Web Design Consultancy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("a.navbar-brand").on('click', function(event) {
+                console.log(event)
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                const topOffset = $(`${this.hash}`).offset().top - 60;
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                $('html, body').animate({
+                    scrollTop: topOffset
+                }, 2500);
+            } // End if
+        });
+        })
+    </script>
 </head>
 
 <body>
-    <!-- Navbar Section -->
     <nav class="navbar navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">
             <img src="logo.jpg" alt="Logo">
         </a>
         <div id="nav-items">
-            <a class="navbar-brand" href="#about">About</a>
-            <a class="navbar-brand" href="#work">Work</a>
-            <a class="navbar-brand" href="#get-started">Contact</a>
+            <a class="navbar-brand" id="aboutlink" href="#about">About</a>
+            <a class="navbar-brand" id="worklink" href="#work">Work</a>
+            <a class="navbar-brand" id="get-startedlink" href="#get-started">Contact</a>
         </div>
     </nav>
     <!-- Hero Section -->
-    <div class="jumbotron" id="about">
-        <h1 class="display-4" name="about" class="hero-text">It's Your Website</h1>
-        <h1 class="display-4" name="about" class="hero-text">Design It Your Way.
+    <div class="jumbotron">
+        <h1 class="display-4" id="about">
+            It's Your Website
+            <p>
+                Design It Your Way.
+            </p>
+        </h1>
     </div>
     <!-- Portfolio with Project cards section -->
     <div class="container-fluid">
         <h1 class="text-center" id="work">Our Work</h1>
         <div class="row" id="project-gallery" align="center">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-4">
                 <img class="image-fluid" src="https://via.placeholder.com/384x681" alt="Project 1">
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-4">
                 <img class="image-fluid" src="https://via.placeholder.com/384x681" alt="Project 2">
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-4">
                 <img class="image-fluid" src="https://via.placeholder.com/384x681" alt="Project 3">
             </div>
         </div>
@@ -49,8 +73,8 @@
                 <div class="col-lg-4">
                     <div class="card steps" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">1</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Tell us your Vision</h6>
+                            <h3 class="card-title">1</h5>
+                            <h4 class="card-subtitle mb-2 text-muted">Tell us your Vision</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
@@ -60,8 +84,8 @@
                 <div class="col-lg-4">
                     <div class="card steps" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">2</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Be in Control</h6>
+                            <h3 class="card-title">2</h5>
+                            <h4 class="card-subtitle mb-2 text-muted">Be in Control</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
@@ -71,8 +95,8 @@
                 <div class="col-lg-4">
                     <div class="card steps" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">3</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Something Else</h6>
+                            <h3 class="card-title">3</h5>
+                            <h4 class="card-subtitle mb-2 text-muted">Something Else</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
@@ -88,8 +112,8 @@
                             <img class="image-fluid" src="https://via.placeholder.com/550x447" class="why-us-photo">
                             <div class="card w-50">
                                 <div class="card-body">
-                                    <h5 class="card-title">WHY *DESIGN FIRM NAME*</h5>
-                                    <p class="card-text-blue">Design with people in mind</p>
+                                    <h6 class="card-title">WHY *DESIGN FIRM NAME*</h6>
+                                    <h4 class="card-text-blue">Design with people in mind</h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam
@@ -101,12 +125,12 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="why-us-card-photo">
+                        <div class="why-us-card-photo odd">
                             <img class="image-fluid" src="https://via.placeholder.com/550x447" class="why-us-photo">
                             <div class="card w-50">
                                 <div class="card-body">
-                                    <h5 class="card-title">WHY *DESIGN FIRM NAME*</h5>
-                                    <p class="card-text-blue">Design with people in mind</p>
+                                    <h6 class="card-title">WHY *DESIGN FIRM NAME*</h6>
+                                    <h4 class="card-text-blue">Design with people in mind</h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam
@@ -148,8 +172,7 @@
                 </div>
                 <!-- Get Started and Contact Section-->
                 <h1 class="text-center" id="get-started">Get Started Today</h1>
-                <p id="get-started-subheading">Share your idea below and we can get started on a partnership to create
-                    something amazing</p>
+                <p id="get-started-subheading">Share your idea below and we can get started on a partnership to create something amazing</p>
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4">
@@ -189,22 +212,11 @@
                         <div class="form-group">
                             <label for="message">Message *</label>
                             <textarea class="form-control" id="message" cols="5" rows="9"></textarea>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Footer Section -->
-        <nav class="navbar navbar-light bottom">
-            <a class="navbar-brand" href="#">
-                <img src="logo.jpg" alt="Logo">
-                </a>
-            <div id="nav-items">
-                <a class="navbar-brand" href="#about">About</a>
-                <a class="navbar-brand" href="#work">Work</a>
-                <a class="navbar-brand" href="#get-started">Contact</a>
-            </div>
-        </nav>
+
 </body>
 
 </html>
