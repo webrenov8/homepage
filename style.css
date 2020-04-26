@@ -11,6 +11,7 @@ body{
 /* Fonts */
 h1, h2, h3, h4, h5, h6{
     font-family: Josefin Sans;
+    color: #030093;
 }
 
 p{
@@ -32,6 +33,9 @@ p{
 
 
 /* We'll Transform Your Ideas section */
+.card{
+    border: 1px solid #030093
+}
 #cards-row {
     margin-top: 50px;
 }
@@ -46,7 +50,7 @@ p{
     margin-bottom: 73px !important;
 }
 .card.steps .card-title, .card.steps .card-subtitle {
-    color: blue !important;
+    color: #030093 !important;
 }
 .card.steps .card-title, .card.steps .card-subtitle, .card.steps .card-text {
     display: flex;
@@ -55,7 +59,7 @@ p{
 }
 #transform-ideas {
     margin-top: 100px;
-    color: blue;
+    color: #030093;
 }
 /* End */
 
@@ -90,13 +94,13 @@ p{
 }
 .card-title {
     font-size: large;
-    color: blue;
+    color: #030093;
 }
 .card-title, .card-text {
     text-align: left;
 }
-.card-text-blue {
-    color: blue;
+.card-text-#030093 {
+    color: #030093;
     font-size: x-large;
 }
 /* End */
@@ -104,7 +108,7 @@ p{
 
 /* Testimonials */
 #testimonials {
-    color: blue;
+    color: #030093;
 }
 #testimonial-cards {
     margin-top: 100px;
@@ -124,7 +128,7 @@ p{
 /* Get Started */
 #get-started {
     margin-top: 100px;
-    color: blue;
+    color: #030093;
 }
 #get-started-subheading {
     margin-top: 50px;
