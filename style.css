@@ -43,22 +43,17 @@ body {
 
 
 /* Why Us card+photo section*/
-/* #why-us {
-    display: flex;
-    justify-content: center;
-} */
-
 .why-us-card-photo {
+    max-width: 550px;
     position: relative;
-} 
+}
 #why-us .card.w-50 {
     position: absolute;
-    min-width: 250px;
-    top: 0;
-    left: 100%;
+    width: 200px;
+    top: 10%;
+    left: 75%;
 }
-.why-us-photo {
-    position: relative;
+.why-us-card-photo {
     margin-bottom: 100px;
 }
 .card-title {
