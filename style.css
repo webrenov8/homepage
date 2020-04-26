@@ -72,11 +72,9 @@ p{
     max-width: 550px;
     position: relative;
 }
-
 #why-us .why-us-card-photo.odd .card.w-50 {
     left: -66%;
 }
-
 #why-us .card.w-50 {
     position: absolute;
     width: 90% !important;
@@ -112,13 +110,6 @@ p{
 }
 #testimonial-cards {
     margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-.testimonial-name {
-    font-weight: bold;
-    text-align: left;
 }
 .card-text.testimonial {
     font-weight: bold;
@@ -165,5 +156,5 @@ p{
     }
     #why-us .why-us-card-photo.odd .card.w-50 {
         left: unset;
-    }
+    } 
 }
