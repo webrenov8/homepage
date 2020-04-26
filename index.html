@@ -12,7 +12,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="logo.jpg" alt="Logo">
+        </a>
         <div id="nav-items">
             <a class="navbar-brand" href="#about">About</a>
             <a class="navbar-brand" href="#work">Work</a>
@@ -20,9 +24,9 @@
         </div>
     </nav>
     <!-- Hero Section -->
-    <div class="jumbotron">
-        <h1 class="display-4" name="about" id="hero">It's Your Website</h1>
-        <h1 class="display-4" name="about" id="hero">Design It Your Way.
+    <div class="jumbotron" id="about">
+        <h1 class="display-4" name="about" class="hero-text">It's Your Website</h1>
+        <h1 class="display-4" name="about" class="hero-text">Design It Your Way.
     </div>
     <!-- Portfolio with Project cards section -->
     <div class="container-fluid">
@@ -144,7 +148,8 @@
                 </div>
                 <!-- Get Started and Contact Section-->
                 <h1 class="text-center" id="get-started">Get Started Today</h1>
-                <p id="get-started-subheading">Share your idea below and we can get started on a partnership to create something amazing</p>
+                <p id="get-started-subheading">Share your idea below and we can get started on a partnership to create
+                    something amazing</p>
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4">
@@ -184,11 +189,22 @@
                         <div class="form-group">
                             <label for="message">Message *</label>
                             <textarea class="form-control" id="message" cols="5" rows="9"></textarea>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+        </div>
+        <!-- Footer Section -->
+        <nav class="navbar navbar-light bottom">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Logo">
+                </a>
+            <div id="nav-items">
+                <a class="navbar-brand" href="#about">About</a>
+                <a class="navbar-brand" href="#work">Work</a>
+                <a class="navbar-brand" href="#get-started">Contact</a>
+            </div>
+        </nav>
 </body>
 
 </html>
